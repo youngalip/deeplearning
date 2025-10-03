@@ -658,14 +658,7 @@ def main():
     print(f"\nTraining Loss Convergence:")
     print(f"Plain-34 Final Training Loss: {plain_history['train_loss'][-1]:.4f}")
     print(f"ResNet-34 Final Training Loss: {resnet_history['train_loss'][-1]:.4f}")
-    
-    print("\n" + "="*60)
-    print("CONCLUSIONS:")
-    print("="*60)
-    print("1. Residual connections help with the degradation problem")
-    print("2. ResNet-34 shows better convergence and final accuracy")
-    print("3. Training is more stable with residual connections")
-    print("4. The skip connections allow deeper networks to train effectively")
 
 if __name__ == "__main__":
+
     main()
